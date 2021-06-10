@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-color-petla {
+    background-color: #de4e5e;
+}
+.font-color-petla{
+  color: #de4e5e;
+}
+.container {
+  margin-top: 100px;
+}
+
+.box-shadow-bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+
+}
