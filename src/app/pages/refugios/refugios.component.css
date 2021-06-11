@@ -1,0 +1,25 @@
+.file-input {
+  height: fit-content;
+}
+.row-info {
+  margin-top: 40px;
+}
+.info-refugio {
+  margin-bottom: 20px;
+}
+input[type="file"] {
+  height: 38px  !important;
+}
+.btn-link {
+  color:#de4e5e !important
+}
+
+.icon-plus {
+  font-size: 40px;
+  color: #de4e5e;
+  cursor: pointer;
+  z-index: 1000;
+}
+.buttons {
+  margin-top: 20px;
+}

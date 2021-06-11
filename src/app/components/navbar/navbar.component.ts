@@ -8,6 +8,8 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
   faPaw = faPaw
+  isMenuCollapsed = true;
+
   constructor() { }
 
   ngOnInit(): void {
