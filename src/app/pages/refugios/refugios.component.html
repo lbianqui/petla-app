@@ -1,39 +1,76 @@
 <div class="container">
-  <div class="card text-left box-shadow-bottom">
+  <app-title-section title="Refugios - Dar en adopción"></app-title-section>
+  <div class="card text-left box-shadow-bottom info-refugio">
     <div class="card-body">
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <div class="row">
-            <div class="col-6">
-              <label for="exampleInputEmail1" class="form-label">Nombre</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" />
-            </div>
-            <div class="col-6">
-              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="col-6">
-              <label for="exampleInputEmail1" class="form-label">Nombre</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" />
-            </div>
-            <div class="col-6">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" />
-            </div>
-            <div class="col">
-              <label for="exampleFormControlTextarea1" class="form-label">Descripción:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-          </div>
-
+      <h6 class="card-title">Información de refugio</h6>
+      <div class="row mt-5">
+        <div class="col-6 mb-3">
+          <label for="formFileLg" class="form-label">Nombre:</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="Refugios puppis" disabled>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="formFileLg" class="form-label">Cuit:</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="30-3034221-12" disabled>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="formFileLg" class="form-label">Dirección:</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="Rio de janeiro 234" disabled>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="formFileLg" class="form-label">CP:</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="1405" disabled>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="formFileLg" class="form-label">Telèfono:</label>
+          <input class="form-control" id="disabledInput" type="text" placeholder="+541121325322" disabled>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="formFileLg" class="form-label">Email:</label>
+          <input class="form-control" id="disabledInput" type="email" placeholder="email@gmail.com" disabled>
         </div>
       </div>
-
+    </div>
+  </div>
+  <div class="card text-left box-shadow-bottom">
+    <div class="card-body">
+      <h6 class="card-title mb-5">Agregar mascotas</h6>
+      <ngb-accordion  [closeOthers]="true" activeIds="static-1">
+        <ngb-panel id="static-1" >
+          <ng-template ngbPanelTitle>
+            <span class="btn-link">Mascota 1</span>
+          </ng-template>
+          <ng-template ngbPanelContent>
+           <app-form-alta-mascotas></app-form-alta-mascotas>
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-2">
+          <ng-template ngbPanelTitle>
+            <span class="btn-link">Mascota 2</span>
+          </ng-template>
+          <ng-template ngbPanelContent>
+            <app-form-alta-mascotas></app-form-alta-mascotas>
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-3">
+          <ng-template ngbPanelTitle>
+            <span class="btn-link">Mascota 3</span>
+          </ng-template>
+          <ng-template ngbPanelContent>
+            <app-form-alta-mascotas></app-form-alta-mascotas>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+      <div class="row justify-content-end mt-3">
+        <div class="col text-right">
+          <fa-icon class="icon-plus" [icon]="faPlusCircle"></fa-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row buttons">
+    <div class="col text-right">
+      <button type="button" class="btn btn-light pointer mr-1">Borrar</button>
+      <button type="button" class="btn bg-color-petla text-light pointer">Cargar</button>
     </div>
   </div>
 </div>

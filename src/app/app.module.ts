@@ -9,6 +9,9 @@ import { RefugiosComponent } from './pages/refugios/refugios.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AdoptaComponent } from './pages/adopta/adopta.component';
 import { TitleSectionComponent } from './components/title-section/title-section.component';
+import { FormAltaMascotasComponent } from './components/form-alta-mascotas/form-alta-mascotas.component';
+import { LoginModalComponent } from './components/login-modal/login-modal.component';
+import { CardPetComponent } from './components/card-pet/card-pet.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TitleSectionComponent } from './components/title-section/title-section.
     NavbarComponent,
     RefugiosComponent,
     AdoptaComponent,
-    TitleSectionComponent
+    TitleSectionComponent,
+    FormAltaMascotasComponent,
+    LoginModalComponent,
+    CardPetComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+<div class="card box-shadow-bottom" >
+  <div class="card-header bg-color-petla">
+    <div class="row">
+      <div class="col-6 text-light"> {{pet.nombre}} - {{pet.edad}}</div>
+      <div class="col-6 text-right text-light font-weight-bold"><span class="pointer">Adoptá</span></div>
+    </div>
+  </div>
+  <img [src]="pet.image" class="card-img-top card-img" alt="...">
+    <ngb-accordion>
+      <ngb-panel id="static-1">
+        <ng-template ngbPanelTitle>
+          <span class="seemore">Ver más</span>
+        </ng-template>
+        <ng-template ngbPanelContent>
+          <p>- Acerca de {{pet.nombre}}: {{pet.descripcion}}</p>
+          <p>- Vacunado: {{pet.vacunado}} </p>
+          <p>- Castrado: {{pet.castrado}}</p>
+          <p>- Refugio: {{pet.refugio.nombre}}</p>
+          <p>- Dirección: {{pet.refugio.direccion}}</p>
+          <p>- Email: {{pet.refugio.email}}</p>
+          <p>- Teléfono: {{pet.refugio.telefono}}</p>
+
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+</div>

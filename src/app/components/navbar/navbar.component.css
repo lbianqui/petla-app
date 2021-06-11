@@ -2,6 +2,16 @@
   font-family: 'Baloo';font-size: 22px;
 }
 
-.nav-item:hover {
-  font-size: 20px;
+
+
+
+@media screen and (min-width: 992px) {
+  .login {
+    margin-left: 60%;
+    width: 350px;
+    justify-content: flex-end;
+  }
+
 }
+
+

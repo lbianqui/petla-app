@@ -1,0 +1,19 @@
+.login-text {
+  border-top: 1px solid white;
+  padding-top: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.brand-petla {
+  font-family: 'Baloo';font-size: 22px;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .login-text {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+}
